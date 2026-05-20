@@ -42,7 +42,9 @@ const Navbar = () => {
           Portfolio
         </a>
 
-        <button className="contact-btn">CONTACT ME</button>
+        <a href="#contact" className="contact-btn" onClick={() => setMenuOpen(false)}>
+          CONTACT ME
+        </a>
       </nav>
 
       {/* Mobile Menu */}

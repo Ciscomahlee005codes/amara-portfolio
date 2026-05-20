@@ -85,14 +85,16 @@
   border-radius: 50px;
   border: none;
   background: white;
-  color: black;
+  color: black !important;
   font-weight: 700;
   cursor: pointer;
   transition: 0.3s ease;
+  text-decoration: none !important;
 }
 
 .contact-btn:hover {
   transform: translateY(-4px);
+  text-decoration: none !important;
   background: #e5e5e5;
 }
 
