@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+.footer {
+  width: 100%;
+  background: #050505;
+  color: white;
+  padding: 4rem 7% 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ================= TOP ================= */
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-top h2 {
+  font-size: 2rem;
+  max-width: 500px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+/* ================= SOCIALS ================= */
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-socials a {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+
+  transition: 0.4s ease;
+}
+
+.footer-socials a:hover {
+  transform: translateY(-8px);
+  background: white;
+  color: black;
+}
+
+/* ================= BOTTOM ================= */
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.footer-bottom p {
+  color: #a8a8a8;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.footer-bottom span {
+  color: white;
+  font-weight: 700;
+}
+.footer-link {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #d6d6d6;
+  text-decoration: underline;
+}
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 4rem 5% 2rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-top h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-top h2 {
+    font-size: 1.4rem;
+  }
+
+  .footer-socials a {
+    width: 48px;
+    height: 48px;
+    font-size: 1rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.85rem;
+  }
+}

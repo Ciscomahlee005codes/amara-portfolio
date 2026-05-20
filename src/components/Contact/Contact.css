@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+.contact {
+  width: 100%;
+  min-height: 100vh;
+
+  background: linear-gradient(
+    135deg,
+    #050505 0%,
+    #111111 50%,
+    #f4f4f4 50%,
+    #ffffff 100%
+  );
+
+  padding: 7rem 7%;
+  overflow: hidden;
+}
+
+/* ================= TITLE ================= */
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.contact-title span {
+  color: #888;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.contact-title h2 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  font-weight: 800;
+  color: white;
+}
+
+.contact-title p {
+  max-width: 700px;
+  margin: 1rem auto 0;
+  line-height: 1.8;
+  color: #d1d1d1;
+}
+
+/* ================= LAYOUT ================= */
+
+.contact-container {
+  display: flex;
+  gap: 4rem;
+  align-items: stretch;
+}
+
+/* ================= LEFT ================= */
+
+.contact-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-info-card {
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(15px);
+
+  border-radius: 25px;
+
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  transition: 0.4s ease;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-8px);
+}
+
+.contact-info-card svg {
+  width: 65px;
+  height: 65px;
+
+  padding: 1rem;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  font-size: 1.4rem;
+  color: white;
+}
+
+.contact-info-card h4 {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-info-card p {
+  color: #d0d0d0;
+  font-size: 0.95rem;
+}
+
+/* ================= RIGHT ================= */
+
+.contact-right {
+  flex: 1;
+}
+
+.contact-right form {
+  background: rgba(255, 255, 255, 0.9);
+
+  padding: 3rem;
+
+  border-radius: 30px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= INPUTS ================= */
+
+.input-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-right input,
+.contact-right textarea {
+  width: 100%;
+
+  padding: 1rem 1.3rem;
+
+  border: 1px solid #ddd;
+
+  border-radius: 16px;
+
+  outline: none;
+
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+
+  transition: 0.3s ease;
+}
+
+.full-input {
+  margin-bottom: 1.5rem;
+}
+
+.contact-right textarea {
+  resize: none;
+  margin-bottom: 2rem;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+  border-color: #111;
+}
+
+/* ================= BUTTON ================= */
+
+.contact-right button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  padding: 1rem 2rem;
+
+  border: none;
+  border-radius: 50px;
+
+  background: #111;
+  color: white;
+
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: 0.4s ease;
+}
+
+.contact-right button:hover {
+  transform: translateY(-5px);
+  background: black;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact {
+    background: #050505;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 6rem 5%;
+  }
+
+  .contact-title h2 {
+    font-size: 2.3rem;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .contact-right form {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-title h2 {
+    font-size: 1.9rem;
+  }
+
+  .contact-info-card {
+    padding: 1.5rem;
+  }
+
+  .contact-right form {
+    padding: 1.5rem;
+  }
+}

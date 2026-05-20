@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+.portfolio {
+  width: 100%;
+  min-height: 100vh;
+  background: #050505;
+  padding: 7rem 7%;
+  overflow: hidden;
+  color: white;
+}
+
+/* ================= TITLE ================= */
+
+.portfolio-title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.portfolio-title span {
+  color: #9f9f9f;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.portfolio-title h2 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  font-weight: 800;
+}
+
+.portfolio-title p {
+  max-width: 700px;
+  margin: 1rem auto 0;
+  color: #bdbdbd;
+  line-height: 1.8;
+}
+
+/* ================= GRID ================= */
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* ================= CARD ================= */
+
+.portfolio-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  padding: 2.5rem;
+  border-radius: 30px;
+
+  transition: 0.4s ease;
+
+  backdrop-filter: blur(10px);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-12px);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+/* ================= ICON ================= */
+
+.portfolio-icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 2rem;
+}
+
+.portfolio-icon svg {
+  font-size: 2rem;
+}
+
+/* ================= TEXT ================= */
+
+.portfolio-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-card p {
+  color: #bcbcbc;
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+
+/* ================= BUTTON ================= */
+
+.portfolio-card button {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+
+  padding: 1rem 1.7rem;
+  border: none;
+  border-radius: 50px;
+
+  background: white;
+  color: black;
+
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: 0.4s ease;
+}
+
+.portfolio-card button:hover {
+  transform: translateX(8px);
+  background: #d9d9d9;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 6rem 5%;
+  }
+
+  .portfolio-title h2 {
+    font-size: 2.3rem;
+  }
+
+  .portfolio-card {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .portfolio-title h2 {
+    font-size: 1.9rem;
+  }
+
+  .portfolio-card {
+    padding: 1.7rem;
+  }
+
+  .portfolio-card h3 {
+    font-size: 1.3rem;
+  }
+}
