@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       {/* LEFT SIDE */}
       <div className="hero-left">
         <div className="hero-content">

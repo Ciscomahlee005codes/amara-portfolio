@@ -30,6 +30,9 @@ const Navbar = () => {
 
       {/* Nav Links */}
       <nav className={menuOpen ? "nav-links active" : "nav-links"}>
+        <a href="#home"  onClick={() => setMenuOpen(false)}>
+          Home
+        </a>
         <a href="#about" onClick={() => setMenuOpen(false)}>
           About me
         </a>
