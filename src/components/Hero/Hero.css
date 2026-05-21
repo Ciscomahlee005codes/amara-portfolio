@@ -294,17 +294,33 @@
 
 /* ================= SMALL MOBILE ================= */
 
+/* ================= SMALL MOBILE ================= */
+
 @media (max-width: 500px) {
+  .hero {
+    min-height: auto;
+  }
+
   .hero-left {
+    width: 100%;
+    min-height: 100vh;
     padding: 7rem 6% 4rem;
+    clip-path: none;
+  }
+
+  /* REMOVE ENTIRE RIGHT SECTION */
+  .hero-right {
+    display: none;
   }
 
   .hero-name {
     font-size: 2.2rem;
+    line-height: 1.2;
   }
 
   .typing-text {
     font-size: 1rem;
+    min-height: 35px;
   }
 
   .hero-description {
@@ -312,18 +328,14 @@
     line-height: 1.7;
   }
 
-  .hero-right {
-    min-height: 55vh;
-  }
-
-  .hero-image-wrapper {
-    width: 90%;
+  .social-icons {
+    margin-top: 2rem;
   }
 
   .social-icons a {
     width: 48px;
     height: 48px;
-
     border-radius: 14px;
+    font-size: 1rem;
   }
 }

@@ -1,7 +1,9 @@
 import React from "react";
 import "./Hero.css";
-import { FaGithub, FaLinkedinIn, FaAt } from "react-icons/fa";
-import Amara from "../../assets/Amarachi.jpeg";
+import { FaLinkedinIn} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import Amara from "../../assets/Amara-2.jpeg";
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
@@ -35,15 +37,15 @@ const Hero = () => {
           </p>
 
           <div className="social-icons">
-            <a href="/">
-              <FaAt />
+            <a mailto="mailto:Amarachukwunwokoro@gmail.com">
+              <MdEmail />
             </a>
 
-            <a href="/">
-              <FaGithub />
+            <a href="https://twitter.com/yourusername">
+              <FaXTwitter />
             </a>
 
-            <a href="/">
+            <a href="https://linkedin.com/in/yourusername">
               <FaLinkedinIn />
             </a>
           </div>
@@ -53,7 +55,7 @@ const Hero = () => {
       {/* RIGHT SIDE */}
       <div className="hero-right">
         <div className="hero-image-wrapper">
-          <img src={Amara} alt="hero" />
+          <img src={Amara} alt="hero" className="hero-pics" />
         </div>
       </div>
     </section>

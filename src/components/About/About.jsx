@@ -6,7 +6,7 @@ import {
   FaCalendarCheck,
   FaEnvelopeOpenText,
 } from "react-icons/fa";
-import Amara from "../../assets/Amarachi.jpeg";
+import Amara from "../../assets/Amara-2.jpeg";
 
 const About = () => {
   return (
